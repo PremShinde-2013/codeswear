@@ -7,7 +7,7 @@ const Tshirt = () => {
     <div>
       <section className='text-gray-600 body-font '>
         <div className='container px-5 py-24 mx-auto'>
-          <div className='flex flex-wrap m-7'>
+          <div className='flex flex-wrap -m-4 justify-center'>
             <div className='lg:w-1/5 md:w-1/4 p-4 w-full shadow-xl my-5 mx-6 rounded-lg  '>
               <Link
                 href={"/product/wear-the-code"}

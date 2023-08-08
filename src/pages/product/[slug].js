@@ -13,7 +13,7 @@ const top100Films = [
   { label: 560017 },
 ];
 
-export default function Page() {
+export default function Page({ addToCart }) {
   const router = useRouter();
   const { slug } = router.query;
   const [pin, setPin] = useState();
@@ -197,7 +197,19 @@ export default function Page() {
                 <button class='flex ml-14  text-white bg-indigo-500 border-0 py-2 px-6 md:px-6 focus:outline-none hover:bg-indigo-600 rounded'>
                   Buy Now
                 </button>
-                <button class='flex ml-14 text-white bg-indigo-500 border-0 py-2 px-6 md:px-6 focus:outline-none hover:bg-indigo-600 rounded'>
+                <button
+                  onClick={() => {
+                    addToCart(
+                      slug,
+                      1,
+                      499,
+                      "Wear the code(XL/red)",
+                      "XL",
+                      "Red"
+                    );
+                  }}
+                  class='flex ml-14 text-white bg-indigo-500 border-0 py-2 px-6 md:px-6 focus:outline-none hover:bg-indigo-600 rounded'
+                >
                   Add to Cart
                 </button>
                 <button class='rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4'>
