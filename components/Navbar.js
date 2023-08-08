@@ -236,13 +236,16 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <Button
-            className='mt-8 mx-auto flex justify-center '
-            variant='outlined'
-          >
-            <ShoppingBagIcon className='mr-1' />
-            Checkout
-          </Button>
+          <div>
+            <Button className='mt-8 mx-auto  mr-2  ' variant='outlined'>
+              <ShoppingBagIcon className='mr-1' />
+              Checkout
+            </Button>
+            <Button className='mt-8 mx-auto  ' variant='outlined'>
+              <ShoppingBagIcon className='mr-1' />
+              Clear Cart
+            </Button>
+          </div>
         </div>
       </div>
     </div>
