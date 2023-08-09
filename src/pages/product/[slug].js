@@ -22,7 +22,7 @@ export default function Page({ addToCart }) {
   const checkServiceablity = async () => {
     let pins = await fetch("http://localhost:3000/api/pincode");
     let pinJson = await pins.json();
-    console.log(pinJson, pin);
+    // console.log(pinJson, pin);
     if (pinJson.includes(parseInt(pin))) {
       setService(true);
     } else {
